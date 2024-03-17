@@ -73,7 +73,7 @@ URL_SHORTNER_WEBSITE_API = environ.get('URL_SHORTNER_WEBSITE_API', 'a5a509a953db
 
      # Auto Delete For Group Message (Self Delete) #
 SELF_DELETE_SECONDS = int(environ.get('SELF_DELETE_SECONDS', 600))
-SELF_DELETE = is_enabled(environ.get('SELF_DELETE', True)
+SELF_DELETE = is_enabled(environ.get('SELF_DELETE', True)), True)
 if SELF_DELETE == "True":
     SELF_DELETE = True
 
